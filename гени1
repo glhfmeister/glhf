@@ -1,0 +1,90 @@
+import math as m
+##1
+print ('Задание 1 ')
+a = int(input('Введите сторону a '))
+b = int(input('Введите сторону b '))
+c = int(input('Введите сторону c '))
+s=1
+k = 1
+while k<=15:
+    d = c+k
+    p = (a+b+d)/2
+    p = p * 2
+    s = m.sqrt(p*(p-a)*(p-b)*(p-d))
+    print (s, end = ' ')
+    k += 1
+print ()
+##2
+print ('Задание 2 ')
+n = int(input('Введите натуральное число '))
+s = 0
+k = 1
+while n >= k:
+    s = s+k
+    k = k+1
+else:
+    print (s)
+##3
+print ('Задание 3 ')
+n = int(input('Введите натуральное число степень 2 которое хотите получить '))
+p = 1
+i = 1
+while i <= n:
+    p = p*2
+    i = i+1
+else:
+    print (p)
+##4
+print ('Задание 4 ')
+n = int(input('Введите кол-во корней '))
+p = 0
+i = 1
+while i <= n:
+    p = m.sqrt(2+p)
+    n=n-1
+print(p)
+##5
+print ('Задание 5 ')
+m = int(input('Введите m '))
+n = int(input('Введите n '))
+s = m
+i = 1
+while i<=n:
+    s=s*(m+i)
+    i=i+1
+else:
+    print(s)
+##6
+print ('Задание 6 ')
+y = 0
+x = 0
+z = -3
+while (z<=3):
+    x = z
+    if x < 1:
+        y = x
+    elif x >= 1:
+        y = x**2 + 1
+    print (y)
+    z += 0.5
+
+##7
+print ('Задание 7 ')
+r = x=int(input('Введите делимое ' ))
+y=int(input('Введите делитель ' ))
+q=0
+while r > y:
+    r = r - y
+    q += 1
+print('X = ',q, '*', y, '+', r )
+##8
+print ('Задание 8 ')
+q = 2
+a = 1
+chsilozadannoe=int(input('Введите любое целое число '))
+while chsilozadannoe > q:
+    if chsilozadannoe % q == 0:
+        a = 0
+        chsilozadannoe = q
+    q += 1
+print(a)
