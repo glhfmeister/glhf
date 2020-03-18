@@ -10,14 +10,14 @@ int main() {
     
     cout << "Input a ";
     cin >> a;
+
+    
     
     for (int i = 0; i < a; i++){
     	results = formula (i,x1);
-		cout << results << "\t";   	
+		cout << results << "\n";   	
 	}
 
-	
-    
     return 0;
 }
 double formula (int a1,double x01){
